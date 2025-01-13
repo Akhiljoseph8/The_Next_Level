@@ -1,0 +1,26 @@
+@media (max-width: 768px) {
+    .navbar-nav {
+      flex-direction: column;
+    }
+}
+
+/* Navbar Styles */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+    margin: 0 5px;
+  }
+
+  @media (min-width: 990px) {
+    .nav-btn-div{
+      width: 300px; 
+      display: flex;
+    }
+    .nav-btn{
+      margin-left: auto
+    }
+}
