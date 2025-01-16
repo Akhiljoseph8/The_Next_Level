@@ -89,11 +89,15 @@ margin-top: 60px;
   }
 }
 
-@media (max-width: 1000px) {
-  /* .carousel-container {
-    height: 70vh;
-  } */
 
+@media (max-width: 1000px) {
+  .carousel-container {
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
   .cta-button {
     padding: 10px 20px;
     font-size: 1rem;
@@ -101,7 +105,9 @@ margin-top: 60px;
 
   .cards-section {
     padding: 20px 10px;
-    margin-top: -90px;
+    margin-top: calc(-10vw / 16 * 9 + 20px); /* Ensure consistent spacing between carousel and cards */
+
+    /* margin-top: -90px; */
   }
 
   .card {
@@ -109,10 +115,7 @@ margin-top: 60px;
   }
 }
 @media (max-width: 768px) {
-  /* .carousel-container {
-    height: 50vh;
-  } */
-
+ 
   .cta-button {
     padding: 10px 20px;
     font-size: 1rem;
@@ -120,7 +123,7 @@ margin-top: 60px;
 
   .cards-section {
     padding: 20px 10px;
-    margin-top: -210px;
+    /* margin-top: -210px; */
   }
 
   .card {
@@ -129,9 +132,7 @@ margin-top: 60px;
 }
 
 @media (max-width: 480px) {
-  /* .carousel-container {
-    height: 40vh;
-  } */
+ 
 
   .cta-button {
     font-size: 0.9rem;
@@ -140,7 +141,7 @@ margin-top: 60px;
   .cards-section {
     gap: 15px;
     padding: 10px 5px;
-    margin-top: -320px;
+    /* margin-top: -320px; */
   }
 
   .card {

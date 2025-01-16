@@ -1,0 +1,170 @@
+/* Page Header */
+.trainer-page {
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Header Section */
+  .header-section {
+    background-color: #002b5b; /* Blue header background */
+    padding: 3rem 1rem;
+    text-align: center;
+    color: white;
+    margin-top: 4rem;
+  }
+
+  /* Trainer Section */
+  .trainer-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Trainer Card */
+  .trainer-card {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .trainer-img {
+    width: 200px;
+    height: 220px;
+    border-radius: 10%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  
+  .trainer-info {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .trainer-info h2 {
+    font-size: 2rem;
+    color: #2d6a4f;
+    margin-bottom: 5px;
+  }
+  
+  .trainer-info h3 {
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-bottom: 15px;
+  }
+  
+  .trainer-languages,
+  .trainer-courses {
+    margin-bottom: 10px;
+  }
+  
+  .trainer-languages .badge,
+  .trainer-courses span {
+    display: inline-block;
+    background-color: #d8f3dc;
+    color: #2d6a4f;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin: 0 10px 10px 0;
+    font-size: 0.9rem;
+  }
+  
+  .about-trainer {
+    font-size: 1.1rem;
+    color: #495057;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .share-btn {
+    display: inline-block;
+    background-color: #2d6a4f;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    align-self: flex-start;
+  }
+  
+  .share-btn:hover {
+    background-color: #1b4332;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .trainer-card {
+      flex-direction: column;
+      text-align: center;
+      gap: 15px;
+    }
+  
+    .trainer-img {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+    }
+  
+    .trainer-info {
+      text-align: center;
+    }
+  
+    .trainer-info h2 {
+      font-size: 1.8rem;
+    }
+  
+    .trainer-info h3 {
+      font-size: 1.1rem;
+    }
+  
+    .about-trainer {
+      font-size: 1rem;
+    }
+  
+    .share-btn {
+      align-self: center;
+      padding: 8px 15px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .page-header h1 {
+      font-size: 2rem;
+    }
+  
+    .trainer-info h2 {
+      font-size: 1.5rem;
+    }
+  
+    .trainer-info h3 {
+      font-size: 1rem;
+    }
+  
+    .about-trainer {
+      font-size: 0.9rem;
+    }
+  
+    .trainer-languages .badge,
+    .trainer-courses span {
+      font-size: 0.8rem;
+      padding: 5px 8px;
+    }
+  
+    .share-btn {
+      padding: 6px 12px;
+      font-size: 0.8rem;
+    }
+  }
+  
